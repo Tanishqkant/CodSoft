@@ -1,86 +1,59 @@
 *{
     margin: 0;
-    padding: 0.;
-    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open Snas", sans-serif;
 }
-
-.navbar{
-    position: relative;
+body{
     width: 100%;
     height: 100vh;
-    background:#eff4fd;
-    
-}
-nav{
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    background-color: #1D3849;
 }
-nav ul li{
-    display:inline-block;
-    list-style: none;
-    margin: 10px 20px ;
-}
-nav ul li a{
-    text-decoration: none;
-    color:blue ;
-    font-weight: bolder;
-
-}
-nav ul li a:hover{
-    color: darkblue;
-}
-.info{
-    margin: 8%;
-    margin-top: 15%;
-
-}
-.info h1{
-    font-size: 50px;
-    color:red ;
-    margin-bottom: 20px;
-}
-span{
-    color: blue;
-}
-.info p{
-    color:#555;
-    line-height: 22px;
-}
-.info a{
+.calculator{
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 10px;
     background: black;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bolder;
+    box-shadow: 10px 10px;
+}
+input{
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background: grey;
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
     color: white;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-
 }
-.image{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-
-} 
-.image img{
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    transform:bottom 1s,left 1s;
+input::placeholder{
+    color: white;
 }
-
-.info a:hover{
+button{
+    border: 2px solid white;
+    background-color: #a2bbcf;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.equalBtn{
+    background-color: orange;
+}
+.equalBtn:hover{
+    background-color: orangered;
+}
+.operator{
     color: red;
 }
-.footer{
-    text-align: center;
+button:hover{
+    background-color: #142F44;
+    color: white;
+    
 }
